@@ -102,3 +102,19 @@ Incluye capturas de cada comando para demostrar su efecto.
 - [ ] Uso de `git commit --amend`, `git reset .`, `git checkout -- .`,
       `git switch -c`.
 - [ ] Repositorio en GitHub con README y este registro completado.
+
+---
+
+## Bitácora rápida (ejemplo real)
+
+- `2025-11-18 08:30` – `git init`, primer commit (`chore: initial project setup`) y
+  `git push -u origin main`.
+- `08:40` – `git checkout -b rama-heroes`, desarrollo del botón `+/-`, uso de
+  `git reset .` para deshacer el staging y `git commit --amend` para corregir el
+  mensaje; push a la rama y Pull Request.
+- `08:50` – `git checkout main`, `git merge rama-heroes`, `git branch -d
+  rama-heroes`, `git checkout -- .` para descartar pruebas locales.
+- `09:00` – `git switch -c mejora-ui`, actualización de la guía colaborativa,
+  `git commit -am "docs: add collaborative workflow"`, push y merge.
+- `09:10` – Limpieza (`.gitignore`) y actualización de este registro con las
+  evidencias.
