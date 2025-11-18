@@ -38,6 +38,20 @@ python calculator.py --interactive
 - La interfaz gráfica incluye botones de operaciones, limpieza, cambio de signo
   (`+/-`) y evaluación.
 
+## Trabajo colaborativo sugerido
+
+1. Cada integrante clona el repositorio desde GitHub y verifica el correcto
+   funcionamiento de la calculadora (`python calculator.py`).
+2. Cree una rama por funcionalidad (`git checkout -b rama-<feature>`) y publique
+   los avances con `git push -u origin rama-<feature>`.
+3. El compañero revisa la rama mediante Pull Requests, deja comentarios y
+   realiza ajustes usando `git commit -am "fix: ..."` cuando sólo modifica
+   archivos ya rastreados.
+4. Integren los cambios en `main` mediante `git checkout main`, `git merge
+   rama-<feature>` y eliminen la rama local con `git branch -d rama-<feature>`.
+5. Completen el registro de evidencias (`registro_git.md`) con capturas de cada
+   comando y el enlace del repositorio remoto.
+
 ## Próximos pasos sugeridos
 
 1. Seguir el guion de `registro_git.md` para generar los commits y capturas.
