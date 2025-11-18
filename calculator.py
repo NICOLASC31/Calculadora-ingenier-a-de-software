@@ -138,6 +138,16 @@ def launch_gui() -> None:
         reset_display = True
         set_display("0")
 
+    def toggle_sign() -> None:
+        """Negates the current value shown on screen."""
+        try:
+            current = float(display_var.get())
+        except ValueError:
+            messagebox.showerror("Error", "Entrada invalida.")
+            clear_display()
+            return
+        set_display(str(-current))
+
     def set_operator(op_key: str) -> None:
         nonlocal stored_value, current_operator, reset_display
         try:
@@ -186,12 +196,13 @@ def launch_gui() -> None:
         ],
         [
             ("C", clear_display, 1),
-            ("0", lambda value="0": append_value(value), 1),
+            ("+/-", toggle_sign, 1),
             (".", append_decimal, 1),
             ("+", lambda op="add": set_operator(op), 1),
         ],
         [
-            ("=", calculate, 4),
+            ("0", lambda value="0": append_value(value), 2),
+            ("=", calculate, 2),
         ],
     ]
 

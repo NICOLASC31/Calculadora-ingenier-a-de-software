@@ -35,6 +35,8 @@ python calculator.py --interactive
 - `calculator.py`: Código fuente con las operaciones básicas.
 - `registro_git.md`: Documento que explica el flujo de trabajo paso a paso,
   comandos utilizados, ejemplos y espacio para adjuntar capturas.
+- La interfaz gráfica incluye botones de operaciones, limpieza, cambio de signo
+  (`+/-`) y evaluación.
 
 ## Próximos pasos sugeridos
 
