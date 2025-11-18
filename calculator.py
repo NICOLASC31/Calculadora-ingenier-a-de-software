@@ -241,7 +241,7 @@ def main(args: list[str] | None = None) -> None:
 
     if namespace.operation is not None:
         if namespace.a is None or namespace.b is None:
-            parser.error("Debes proporcionar dos numeros (a y b).")
+            parser.error("Debes escribir dos numeros (a y b).")
         try:
             result = run_calculation(namespace.operation, namespace.a, namespace.b)
         except ValueError as exc:
